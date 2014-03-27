@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8" />
+     <title>Color Picker Panel</title>
+     <style>
+
+* {
+     padding: 0;
+     margin: 0;
+}
+
+body {
+     background: #fff;
+}
+
+#container {
+    width: 835px;
+    margin: 40px auto;
+    text-align: center;
+
+}
+
+#container h4 {
+	line-height: 1;
+	font-size: 1.5em;
+	margin-bottom: .5em;
+}
+
+#panel {
+    border: 1px dashed #000;
+    overflow: hidden;
+}
+
+.color {
+     width: 100px;
+     height: 100px;
+     float: left;
+     line-height: 100px;
+     font-size: 1.2em;
+     margin: .5em 1em;
+     color: #4eb8ea;
+     cursor: pointer;
+}
+
+.color:hover {
+   -webkit-transform: scale(1.1,1.1);
+   -moz-transform: scale(1.1,1.1);
+   transform: scale(1.1,1.1);  
+   box-shadow: 0 0 5px #51a7e8;  
+}
+
+
+
+     </style>
+
+</head>
+
+<body>
+<div id="container">
+   <h4>Color Picker Panel</h4>	
+   <div id="panel">
+	   <section class="color" style="background-color: #fff;">
+	   	   <span>#fff</span>
+	   </section>
+
+	   <section class="color" style="background-color: #efefef;">
+	   	   <span>#efefef</span>
+	   </section>
+
+	   <section class="color" style="background-color: #ccc;">
+	   	   <span>#ccc</span>
+	   </section>
+
+	   <section class="color" style="background-color: #aaa;">
+	   	   <span>#aaa</span>
+	   </section>
+
+	   <section class="color" style="background-color: #888;">
+	   	   <span>#888</span>
+	   </section>
+
+	   <section class="color" style="background-color: #616161;">
+	   	   <span>#616161</span>
+	   </section>
+
+	   <section class="color" style="background-color: #555;">
+	   	   <span>#555</span>
+	   </section>
+
+	   <section class="color" style="background-color: #444;">
+	   	   <span>#444</span>
+	   </section>
+
+	   <section class="color" style="background-color: #333;">
+	   	   <span>#333</span>
+	   </section>
+
+	   <section class="color" style="background-color: #000;">
+	   	   <span>#000</span>
+	   </section>
+
+   </div>
+</div>
+
+
+</body>
+
+</html>

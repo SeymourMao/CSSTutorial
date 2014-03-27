@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8" />
+     <title>Stylin&#8217; with CSS</title>
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,700italic,600italic,600,400,700|Lato:700italic,400,400italic,700,900italic,900" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/myriad-pro.css" type="text/css"> 
+     <link rel="stylesheet" type="text/css" href="css/layout.css">
+     <script type="text/javascript" src="js/modernizr.custom.09294.js"></script>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+  <header><!-- 一级 -->
+    <a href="#">
+	    <section id="title"><!-- 二级 -->
+	      <h1>Stylin&#8217; with CSS</h1>
+	      <h2>The Blog and Books of Charles Wyke-Smith</h2>
+	    </section>
+    </a>
+    <nav class="menu"><!-- 二级 -->
+       <ul>
+		<li class="choice1"><a href="#">Articles</a></li>
+		<li class="choice2">
+			<a href="#">Books</a>
+                <ul><!-- drop down menu items -->
+                            <li><a href="/stylin.php">Stylin’ with CSS</a></li>
+                            <li><a href="/visual_stylin.php">Visual Stylin’ with CSS3</a></li>
+                            <li><a href="/scriptin.php">Scriptin’ with JavaScript and Ajax</a></li>
+                            <li><a href="/codin.php">Codin’ for the Web</a></li>
+                </ul>
+		</li>
+		<li class="choice3" >
+			<a href="#">Resources</a>
+                <ul><!-- drop down menu items -->
+                            <li><a href="/resources_css_selectors.php">CSS Selectors</a></li>
+                            <li><a href="/resources_css3_selectors.php">CSS3 Selectors</a></li>
+                            <li><a href="/resources_css_properties.php">CSS Properties</a></li>
+                            <li><a href="/resources_html_elements.php">HTML and HTML5 Elements</a></li>
+                </ul>
+		</li>
+		<li class="choice4"><a href="#">Bookshelf</a></li>
+		<li class="choice5"><a href="#">Contact Me</a></li>
+	  </ul>
+    </nav>
+    <form class="search" action="#" method="post"> <!-- 二级 -->
+	 <label for="user_name">search</label> <!-- 标注的 for属性与文本框 ID相同 -->
+	 <input type="text" id="user_name" name="user_name" placeholder="search" />
+    </form>
+  </header>
+
+  <section id="feature_area"><!-- 一级 -->
+	  <article id="blog_leadoff"><!-- 二级 -->
+		<!-- 博客内容 -->
+      <div class="inner">
+         <h4 class="entry-published date">May 31, 2013</h4>
+         <h2><a href="/blog/post.php?s=2013-05-31-doing-more-with-less" rel="bookmark" class="entry-title">Doing More with Less</a></h2>
+         <img src="http://www.stylinwithcss.com/images/charles_wyke-smith.jpg" alt="Charles Wyke-Smith photo">
+         <p>
+          Writing CSS in Less enables you to write CSS that is more concise, faster to write and far easier to understand when you revisit it. The primary benefit is that Less lets you nest your CSS rules inside one another the same way as HTML tags are nested, so the relationship between the HTML markup and the CSS that styles it is much clearer, but there are many others, and this article looks at some of the most useful advantages that Less offers.
+            <a href="/blog/post.php?s=2013-05-31-doing-more-with-less" rel="bookmark" class="entry-title">&nbsp;Read Article</a>
+        </p>
+        <h4 class="entry-published date">February 11, 2013</h4>
+<h2><a href="/blog/post.php?s=2013-02-11-make-external-links-open-in-new-windows" rel="bookmark" class="entry-title">Make External Links Open In New Windows</a></h2>
+<p>
+          Discover how to use jQuery to differentiate between internal and external links and open external links in their own windows. I also show how also adding a class allows you to invoke some simple CSS to display a text hint after the link using the ::after pseudo-element, and any other stylings you might want to add to the links that point at pages on other sites.
+            <a href="/blog/post.php?s=2013-02-11-make-external-links-open-in-new-windows" rel="bookmark" class="entry-title">&nbsp;Read Article</a>
+        </p>
+      </div>
+	  </article>
+	  <aside><!-- 二级 -->
+       <section>
+            <form autocomplete="off" id="signin_form" class="signin" action="index.php" method="post"> <!-- the required form tag -->
+                    <!--START OF FORM ELEMENTS-->
+                    <!-- A SINGLE LINE TEXT FIELD --> 
+                <fieldset> <!-- the container for a group of controls -->
+                    <legend><span>Sign In for Code and Updates</span></legend> <!-- the text label for a fieldset -->
+                    <section> <!-- control, label and direction wrapper for styling -->
+                        <label for="email">Email</label> <!-- the for attribute ties the label to its control - same as contol's ID -->
+                        <input type="text" id="email" name="email">  <!-- the text attribute makes this input display as a text field -->     <div class="notes" style="display:none;" id="emailNotes">Please double check your email.</div>
+                    </section>
+                    <!-- END SINGLE LINE TEXT FIELD -->
+                    
+                    <!-- SUBMIT BUTTON -->
+                    <section> <!-- input must be wrapped in a block level element to validate -->
+                        <input type="submit" name="submit" value="Sign In">
+                        <p class="signup">Not signed up? <a href="signup.php">Register now!</a></p>
+                    </section>
+                </fieldset>
+              </form>
+        </section>
+        <section>
+            <article>
+                <h4>Learn CSS3 with Charles</h4>
+                <img src="http://www.stylinwithcss.com/images/code_camp_logo.png" width="70px" alt="Code Camp logo">
+                <p>Designers and programmers are invited to this intermediate to advanced CSS3 training course at Code Camp Charleston. I'll also cover some key related aspects of HTML5 and jQuery. Learn more at the <a href="http://www.chscodecamp.com/classes/css">CodeCamp</a> site.</p>
+            </article>
+        </section>
+        <section>
+
+	        <nav><!-- 三级 -->
+                      <h4>Recent Articles</h4>
+            <ul>
+		     <!-- 博文链接 -->
+              <li><a href="#">Doing More with Less</a></li>
+              <li><a href="#">Make External Links Open In New Windows</a></li>
+              <li><a href="#">Vendor Specific Prefixes</a></li>
+            </ul>
+          </nav>
+        </section>
+	  </aside>
+
+  </section> <!-- end of section feature_area -->
+
+  <section id="promo_area"><!-- 一级 -->
+    <article class="left"><!-- 二级 -->
+       <div class="inner">
+          <h3>HTML5 + CSS3</h3>
+          <a href="/stylin.php"><img src="http://www.stylinwithcss.com/images/stylin3_cover1-130x160.jpg" alt="Stylin' with CSS cover"></a>
+          <aside>
+              <ol>
+                 <li><a href="#">Download the code</a></li>
+                 <li><a href="#">Table of the content</a></li>
+                 <li><a href="#">Buy this book</a></li>
+              </ol>
+          </aside>
+      </div>
+    </article>
+    <article class="left"><!-- 二级 -->
+       <div class="inner">
+          <h3>HTML5 + CSS3</h3>
+          <a href="/stylin.php"><img src="http://www.stylinwithcss.com/images/stylin3_cover1-130x160.jpg" alt="Stylin' with CSS cover"></a>
+          <aside>
+              <ol>
+                 <li><a href="#">Download the code</a></li>
+                 <li><a href="#">Table of the content</a></li>
+                 <li><a href="#">Buy this book</a></li>
+              </ol>
+          </aside>
+      </div>
+    </article>
+     <article class="left"><!-- 二级 -->
+       <div class="inner">
+          <h3>HTML5 + CSS3</h3>
+          <a href="/scriptin.php"><img src="http://www.stylinwithcss.com/images/scriptin_cover1-130x160.jpg" alt="Scriptin' with Ajax cover"></a>
+          <aside>
+              <ol>
+                 <li><a href="#">Download the code</a></li>
+                 <li><a href="#">Table of the content</a></li>
+                 <li><a href="#">Buy this book</a></li>
+              </ol>
+          </aside>
+      </div>
+    </article>
+      <article class="right"><!-- 二级 -->
+       <div class="inner">
+                  <h3>PHP + SQL</h3>
+                  <a href="/codin.php"><img src="http://www.stylinwithcss.com/images/codin_cover-130x160.jpg" alt="Codin' for the Web cover"></a>
+          <aside>
+              <ol>
+                 <li><a href="#">Download the code</a></li>
+                 <li><a href="#">Table of the content</a></li>
+                 <li><a href="#">Buy this book</a></li>
+              </ol>
+          </aside>
+      </div>
+    </article>
+      <article class="right"><!-- 二级 -->
+       <div class="inner">
+          <h3>Presentation</h3>
+                <a href="/visual_stylin.php"><img src="http://www.stylinwithcss.com/images/visual_stylin_cover_smaller.jpg" alt="Visual Stylin' cover"></a>
+          <aside>
+              <ol>
+                 <li><a href="#">Download the code</a></li>
+                 <li><a href="#">Table of the content</a></li>
+                 <li><a href="#">Buy this book</a></li>
+              </ol>
+          </aside>
+      </div>
+    </article>   
+	<!-- article 重复 4 次-->
+  </section>
+
+  <footer><!-- 一级 -->
+	<!-- 页脚文本和 nav 元素 -->
+    <nav>
+              <ul>
+                  <li><a href="/index.php">Home</a></li>
+                    <li><a href="/blog/index.php">Articles</a></li>
+                    <li><a href="/books.php">Books</a></li>
+                    <li><a href="/resources.php">Resources</a></li>
+                    <li><a href="/bookshelf.php">Bookshelf</a></li>
+                  <li><a href="/downloads.php">Code Downloads</a></li>
+                  <li><a href="/contact_me.php">Contact Me</a></li>
+                    <li><a href="/privacy.php">Privacy Policy</a></li>
+              </ul>
+                    <p>&copy;&nbsp;2013 Charles Wyke-Smith.&nbsp;&nbsp;All rights reserved.</p>
+    </nav>
+  </footer>
+
+</div> <!-- wrapper 结束 -->
+
+</body>
+
+</html>

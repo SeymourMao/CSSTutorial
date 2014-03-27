@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8" />
+     <title>CSS Tutorial</title>
+<style type="text/css">
+
+
+* {margin:0; padding:0;}
+figure {
+width:144px; /*图片盒子宽度*/
+height:153px; /*图片盒子高度*/
+margin:20px 20px; /*图片盒子间距*/
+border:1px solid #666; /*图片边框*/
+position:relative; /*为弹出层提供定位上下文*/
+float:left; /*让图片并排显示*/
+}
+img {display:block;} /*去掉图片下方的基线空白*/
+
+figcaption {
+display:none; /*隐藏弹出层*/
+position:absolute; /*相对于容器(图片)定位*/
+left:74%; top:14px; /*把弹出层放到图片右侧*/
+width:130px; /*弹出层宽度*/
+padding:10px; /*弹出层内边距*/
+background:#f2eaea;
+border:3px solid red;
+border-radius:6px;
+}
+figure:hover figcaption {display:block; z-index:1;} /*鼠标悬停在图片上时显示弹出层*/
+figcaption a { /*弹出层的内容*/
+display:block;
+text-decoration:none;
+font-size:12px;
+color:#000;
+}
+
+figcaption::after {
+	border:12px solid;
+	border-color:transparent red transparent transparent;
+	height:0px;
+	width:0px;
+	position: absolute;
+	top: 30%;
+	right: 100%;
+	content: " "
+}
+
+</style>
+
+</head>
+
+<body>
+
+<figure>
+<img src="images/pink_heels.jpg" alt="pink heels" />
+<figcaption>
+<h3>Pink Platforms</h3>
+<a href="#">More info</a>
+</figcaption>
+</figure>
+<figure class="click_me">
+<img src="images/leopard_heels.jpg" alt="leopard heels" />
+<figcaption>
+<h3>Leopard Platforms</h3>
+<a href="#">More info</a>
+</figcaption>
+</figure>
+<figure class="click_me">
+<img src="images/red_heels.jpg" alt="red heels" />
+<figcaption>
+<h3>Red Platforms</h3>
+<a href="#">More info</a>
+</figcaption>
+</figure>
+
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
+<head>
+     <meta charset="utf-8" />
+     <title>CSS Tutorial</title>
+     <style>
+
+* {
+     padding: 0;
+     margin: 0;
+}
+
+body {
+  height: 100%;
+  margin: 0 auto;
+  width: 960px;
+}
+
+.clearfix::after {
+     content: ".";
+     clear: left;
+     height: 0;
+     visibility: hidden;
+     display: block;
+}
+
+div#wrapper {
+  width:960px; margin:0 auto; 
+  border:1px solid;
+  height: 100%;
+  background:url(images/bg_tile_170pxw.png) top right repeat-y #eee;
+
+}
+header {background:#f00;}
+nav {
+width:150px;
+display: table-cell;
+background:#dcd9c0;
+}
+nav li {
+list-style-type:none;
+}
+
+article {
+display: table-cell;
+  width: auto;
+}
+
+aside {
+width:210px;
+display: table-cell;
+background:#3f7ccf;
+}
+footer {clear:both; background:#000; color: #fff;}
+
+
+
+
+
+     </style>
+</head>
+
+<body>
+<header>Fixed header section</header>
+
+<div id="wrapper">
+      <nav>
+       <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">About</a></li>
+         <li><a href="#">Contact</a></li>
+       </ul>
+     </nav> 
+      
+     <article>
+             <p>As you might have heard, I recently launched a site for the templates that I created to use in my personal and professional projects. For lack of a better name, and because the numerals made for a nice logo, I’ve decided to simply refer to it as the 960 Grid System. It’s funny, because even though all I did was post a single tweet about it before going to bed Sunday night, viral word of mouth kicked in, and I’m already getting inquiring emails.
+             </p>  
+             <p>
+     I should note that the 180 KB download size isn’t for the CSS framework alone. That download bundle is for all the files: printable sketch sheets, design templates for Fireworks, Photoshop, OmniGraffle and Vision + the CSS and HTML. The 960.css file itself is only 3.6 KB when compressed.
+            </p>
+             <p>As you might have heard, I recently launched a site for the templates that I created to use in my personal and professional projects. For lack of a better name, and because the numerals made for a nice logo, I’ve decided to simply refer to it as the 960 Grid System. It’s funny, because even though all I did was post a single tweet about it before going to bed Sunday night, viral word of mouth kicked in, and I’m already getting inquiring emails.
+             </p>  
+             <p>
+     I should note that the 180 KB download size isn’t for the CSS framework alone. That download bundle is for all the files: printable sketch sheets, design templates for Fireworks, Photoshop, OmniGraffle and Vision + the CSS and HTML. The 960.css file itself is only 3.6 KB when compressed.
+            </p>   
+     </article> 
+
+
+     <aside>
+        <p>
+I should note that the 180 KB download size isn’t for the CSS framework alone. That download bundle is for all the files: printable sketch sheets, design templates for Fireworks, Photoshop, OmniGraffle and Vision + the CSS and HTML. The 960.css file itself is only 3.6 KB when compressed.
+       </p>   
+     </aside>
+
+</div>
+
+<footer>
+        <p>
+I should note that the 180 KB download size isn’t for the CSS framework alone. That download bundle is for all the files: printable sketch sheets, design templates for Fireworks, Photoshop, OmniGraffle and Vision + the CSS and HTML. The 960.css file itself is only 3.6 KB when compressed.
+       </p>   
+</footer>
+
+</body>
+
+</html>

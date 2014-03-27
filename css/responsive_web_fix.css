@@ -1,0 +1,29 @@
+@media only screen and (max-width:1000px) { /*1000 像素的断点*/
+	body {
+		
+	}
+	#wrapper {width:98%;} /*布局由固定变成流动*/
+	header {
+		height:100px; /*增加页眉高度,为重新定位菜单留出空间*/
+		padding:1px 0 0 0; /*防止导航菜单的上外边距叠加*/
+	}
+	header nav.menu {
+		margin-top:65px; /*把菜单移动到页面标题和搜索框下方 */
+	}
+	section#feature_area {padding-bottom:0;} /*用不着了*/
+	section#feature_area article { /*让博文摘要部分与布局同宽*/
+		float:none; /*不需要浮动了*/
+		width:auto;/*自动填满布局*/
+	}
+	section#feature_area aside { /*原来的右栏同样与布局同宽*/
+		float:none;
+		width:auto;
+	}
+	section#feature_area aside form {
+		float:left; /*浮动到左侧*/
+		margin:15px 0 0 0; /*与 nav 的上外边距一致*/
+	}
+	section#feature_area aside nav {
+		width:17em; /*缩小博文链接区的宽度*/
+	}
+} /*1000 像素断点结束*/
